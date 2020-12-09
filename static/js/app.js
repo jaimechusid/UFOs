@@ -55,8 +55,8 @@ function updateFilters() {
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
     for (var key in filters) {
-      if (key == 'date') {
-        filteredData = filteredData.filter(row => row.datetime === filters['date']);
+      if (key == 'datetime') {
+        filteredData = filteredData.filter(row => row.datetime === filters['datetime']);
       }
       if (key == 'city') {
         filteredData = filteredData.filter(row => row.city === filters['city']);
